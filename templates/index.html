@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+          body{
+          font-family: "Times New Roman";
+          font-size: 2em;
+          padding: 0px;
+           /*background-color: rgba(0,255,30,0.3); */
+          background: url("{{url_for('static', filename='tunnel.jpg')}}");
+          background-size: cover;
+          }
+
+          .wrapper {
+          text-align: center;
+          }
+
+          .button {
+          position: absolute;
+          top: 50%;
+          }
+
+          .loginBox{
+          position:absolute;
+          top:50%;
+          left:50%;
+          transform: translate(-50%, -50%);
+          width: 350px;
+          height: 450px
+          padding: 80px 40px;
+          box-sizing: border-box;
+          background: rgba(0,0,0,0.5);
+          border-radius:15px;
+          }
+    </style>
+
+</head>
+<body>
+<div class="loginBox">
+<button class="button" onclick="location.href='/load';">Load-Model</button>
+</div>
+</body>
+</html>
